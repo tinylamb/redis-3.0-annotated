@@ -47,7 +47,11 @@ typedef struct listNode {
     // 节点的值
     void *value;
     /*
-    void *
+    void 可以指向任意类型的数据. "无类型"可以包容"有类型"，而"有类型"则不能包容"无类型"
+    int *a;
+    void *p;
+    p = a;
+    a = (int *)p;
     */
 
 } listNode;
@@ -76,6 +80,9 @@ typedef struct list {
     // 表尾节点
     listNode *tail;
 
+    /*
+    这三个函数不懂
+    */
     // 节点值复制函数
     void *(*dup)(void *ptr);
 
