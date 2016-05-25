@@ -1,6 +1,10 @@
 .*.swp
 *.o
 *.log
+rediscn.v*
+*.vcxproj
+.gitattributes
+rediscn.sln
 dump.rdb
 redis-benchmark
 redis-check-aof
